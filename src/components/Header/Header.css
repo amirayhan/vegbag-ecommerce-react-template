@@ -1,0 +1,10 @@
+.header_top{
+    padding: 30px;
+}
+.header_top .header_top_left .call p span{
+    color: var(--color1);
+    margin-right: 10px;
+}
+.header_top .header_top_left .call p b {
+    color: var(--color3);
+}

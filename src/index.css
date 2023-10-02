@@ -14,7 +14,7 @@
     --color4: #6c757d;
 }
 
-.body {
+body {
     font-family: var(--font2);
     font-weight: 400;
     color: var(--color4);
