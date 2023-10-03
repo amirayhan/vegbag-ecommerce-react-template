@@ -45,6 +45,55 @@
 }
 /* banner css end */
 
+/* category_and_services css start */
+
+.category_and_services{
+  padding-top: 30px;
+}
+.categories{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.categories h3{
+  background: var(--color1);
+  padding: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 10px 10px 0 0;
+}
+.categories_items{
+  margin-bottom: 30px;
+}
+.categories_items .category_item:last-child{
+  border-radius: 0 0 10px 10px;
+}
+.category_and_services .services .services_item{
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+}
+.category_and_services .services .services_item span{
+  width: 70px;
+  height: 70px;
+  border: 2px solid var(--color2);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 35px;
+  color:var(--color3);
+}
+.category_and_services .services .services_item .item_content{
+  padding-left: 10px;
+}
+.category_and_services .services .services_item .item_content h3{
+  padding-top: 18px;
+  padding-bottom: 5px;
+}
+/* category_and_services css end */
+
 /* media css start */
 
 @media (max-width: 575px) {

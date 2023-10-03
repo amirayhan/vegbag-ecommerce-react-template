@@ -1,8 +1,21 @@
 import React from "react";
-import "./Home.css";
+import "./home.css";
 import object1 from "../../assets/object-2.png";
+import {
+    HiOutlineCreditCard,
+    HiOutlineCurrencyDollar,
+    HiOutlineTruck,
+} from "react-icons/hi2";
+import Categories from "../Categories/Categories";
+import { useLoaderData } from "react-router-dom";
+import Category from "../Category/Category";
+import image1 from "../../assets/category/category_img1.jpg";
+import image2 from "../../assets/category/category_img2.jpg";
+import image3 from "../../assets/category/category_img3.jpg";
+import image4 from "../../assets/category/category_img4.jpg";
 
 const Home = () => {
+    const categories = useLoaderData();
     return (
         <>
             <div className="banner">
@@ -14,6 +27,100 @@ const Home = () => {
                         <h1>100% Natural Organic</h1>
                         <p>Save up to 50% off on your firest order</p>
                         <button className="button1">Shop Collection</button>
+                    </div>
+                </div>
+            </div>
+
+            <div className="category_and_services">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-3">
+                            <div className="categories">
+                                <h3>Categories</h3>
+                                <ul className="categories_items">
+                                    {categories.map((category) => (
+                                        <Category
+                                            key={category.id}
+                                            category={category}
+                                        ></Category>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="col-lg-9">
+                            <div className="services">
+                                <div className="row">
+                                    <div className="col-lg-4">
+                                        <div className="services_item d-flex">
+                                            <span>
+                                                <HiOutlineTruck className="icons"></HiOutlineTruck>
+                                            </span>
+                                            <div className="item_content">
+                                                <h3>Free Delivery</h3>
+                                                <p>For order over $100</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-4">
+                                        <div className="services_item d-flex">
+                                            <span>
+                                                <HiOutlineCurrencyDollar></HiOutlineCurrencyDollar>
+                                            </span>
+                                            <div className="item_content">
+                                                <h3>7 Days Return</h3>
+                                                <p>If damaged product</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-4">
+                                        <div className="services_item d-flex">
+                                            <span>
+                                                <HiOutlineCreditCard></HiOutlineCreditCard>
+                                            </span>
+                                            <div className="item_content">
+                                                <h3>Secure Payment</h3>
+                                                <p>100% secure payment</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 className="pt-5 pb-3">Top Categories</h3>
+                                <div className="row">
+                                    <div className="col-lg-3">
+                                        <div className="category_image">
+                                            <img
+                                                src={image1}
+                                                alt="health care"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-3">
+                                        <div className="category_image">
+                                            <img
+                                                src={image2}
+                                                alt="health care"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-3">
+                                        <div className="category_image">
+                                            <img
+                                                src={image3}
+                                                alt="health care"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-3">
+                                        <div className="category_image">
+                                            <img
+                                                src={image4}
+                                                alt="health care"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

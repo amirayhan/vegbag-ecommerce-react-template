@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "name": "MILKS AND DAIRIES"
+    },
+    {
+        "id": 2,
+        "name": "VEGETABLES"
+    },
+    {
+        "id": 3,
+        "name": "ORGANIC PRODUCT"
+    },
+    {
+        "id": 4,
+        "name": "COSMETICS & BEAUTY"
+    },
+    {
+        "id": 5,
+        "name": "DIGITAL CAMERA"
+    },
+    {
+        "id": 6,
+        "name": "SMART PHONES"
+    },
+    {
+        "id": 7,
+        "name": "FURNITURE"
+    },
+    {
+        "id": 8,
+        "name": "TOYS & GAME"
+    },
+    {
+        "id": 9,
+        "name": "HEALTH & BEAUTY"
+    },
+    {
+        "id": 10,
+        "name": "GIFT IDEAS"
+    },
+    {
+        "id": 11,
+        "name": "HEALTH CARE"
+    }
+]

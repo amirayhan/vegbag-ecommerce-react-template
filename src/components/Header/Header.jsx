@@ -1,5 +1,5 @@
 import React from "react";
-import "./Header.css";
+import "./header.css";
 import HeaderTop from "./HeaderTop";
 import { Link } from "react-router-dom";
 import { HiSearch, HiShoppingCart, HiUser, HiUserAdd } from "react-icons/hi";

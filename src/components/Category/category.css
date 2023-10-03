@@ -1,0 +1,14 @@
+.category_item{
+    padding: 10px 15px;
+    transition: all linear .2s;
+}
+.category_item:hover{
+    background: var(--color2);
+}
+.category_item a{
+    color: var(--color3hover);
+    transition:all linear .2s;
+}
+.category_item:hover a{
+    color: #fff;
+}
