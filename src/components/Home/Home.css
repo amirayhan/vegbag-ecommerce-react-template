@@ -92,6 +92,30 @@
   padding-top: 18px;
   padding-bottom: 5px;
 }
+.category_and_services .services .category_image{
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.category_and_services .services .category_image a{
+  position: absolute;
+  bottom:-64px;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.80);
+  padding: 20px 0;
+  color: #fff;
+  transition: all linear .3s;
+  --webkit--transition: all linear .3s;
+  --moz--transition: all linear .3s;
+  --ms--transition: all linear .3s;
+  --o--transition: all linear .3s;
+}
+.category_and_services .services .category_image:hover a{
+  bottom: 0;
+}
 /* category_and_services css end */
 
 /* media css start */
@@ -101,14 +125,22 @@
         padding-top: 100px;
         padding-bottom: 100px;
     }
-      .banner .banner_content h1{
-        font-size: 2.5rem;
-      }
+    .banner .banner_content h1{
+      font-size: 2.5rem;
+    }
     .banner .banner_content p{
         padding-right: 100px;
     }
     .banner .image1, .banner .image2{
         display: none;
+    }
+}
+@media (max-width: 767px) {
+    .banner .image1, .banner .image2{
+        display: none;
+    }
+    .category_and_services .services .services_item{
+      margin-bottom: 30px;
     }
 }
 /* media css end */

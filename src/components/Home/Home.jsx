@@ -50,7 +50,7 @@ const Home = () => {
                         <div className="col-lg-9">
                             <div className="services">
                                 <div className="row">
-                                    <div className="col-lg-4">
+                                    <div className="col-md-6 col-lg-4">
                                         <div className="services_item d-flex">
                                             <span>
                                                 <HiOutlineTruck className="icons"></HiOutlineTruck>
@@ -61,7 +61,7 @@ const Home = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-lg-4">
+                                    <div className="col-md-6 col-lg-4">
                                         <div className="services_item d-flex">
                                             <span>
                                                 <HiOutlineCurrencyDollar></HiOutlineCurrencyDollar>
@@ -72,7 +72,7 @@ const Home = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-lg-4">
+                                    <div className="col-md-6 col-lg-4">
                                         <div className="services_item d-flex">
                                             <span>
                                                 <HiOutlineCreditCard></HiOutlineCreditCard>
@@ -86,36 +86,40 @@ const Home = () => {
                                 </div>
                                 <h3 className="pt-5 pb-3">Top Categories</h3>
                                 <div className="row">
-                                    <div className="col-lg-3">
+                                    <div className="col-md-6 col-lg-3">
                                         <div className="category_image">
                                             <img
                                                 src={image1}
                                                 alt="health care"
                                             />
+                                            <a href="#">HEALTH CARE</a>
                                         </div>
                                     </div>
-                                    <div className="col-lg-3">
+                                    <div className="col-md-6 col-lg-3">
                                         <div className="category_image">
                                             <img
                                                 src={image2}
                                                 alt="health care"
                                             />
+                                            <a href="#">HEALTH & BEAUTY</a>
                                         </div>
                                     </div>
-                                    <div className="col-lg-3">
+                                    <div className="col-md-6 col-lg-3">
                                         <div className="category_image">
                                             <img
                                                 src={image3}
                                                 alt="health care"
                                             />
+                                            <a href="#">VEGETABLES</a>
                                         </div>
                                     </div>
-                                    <div className="col-lg-3">
+                                    <div className="col-md-6 col-lg-3">
                                         <div className="category_image">
                                             <img
                                                 src={image4}
                                                 alt="health care"
                                             />
+                                            <a href="#">COSMETICS & BEAUTY</a>
                                         </div>
                                     </div>
                                 </div>
