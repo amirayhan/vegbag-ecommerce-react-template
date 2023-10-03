@@ -1,10 +1,113 @@
+/* header_top css start */
 .header_top{
-    padding: 30px;
+    padding: 15px 0 10px 0;
+    
+}
+.header_top .header_top_left .call p {
+    margin-bottom: 0;
 }
 .header_top .header_top_left .call p span{
-    color: var(--color1);
+    color: #fff;
     margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    background: var(--color1);
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
 }
 .header_top .header_top_left .call p b {
     color: var(--color3);
 }
+.header_top .header_top_right select{
+    border: none;
+    padding: 5px 0 5px 5px;
+    border-radius: 3px;
+    outline: none;
+}
+/* header_top css end */
+
+/* header css start */
+.header{
+    background: var(--color1);
+    padding: 20px;
+}
+.header .logo h2{
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+.header .logo h2 span{
+    font-weight: 300;
+}
+.header .search_box {
+    display: flex;
+    position: relative;
+}
+.header .search_box input{  
+    width: 100%;
+    height: 100%;
+    background: var(--color1hover);
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+    outline: none;
+    color: #fff;
+}
+.header .search_box input::placeholder{
+    color: #ffffff7d;
+}
+.header .search_box button{
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    color: #fff;
+}
+.header .header_right{
+    padding-top: 15px;
+}
+.header .header_right li{
+    padding-left: 15px;
+}
+.header .header_right li:first-child{
+    border-right: 2px solid var(--color1hover);
+    padding-right: 15px;
+}
+ .header .header_right li:last-child{
+    border-left: 0;
+}
+.header .header_right li a{
+    color: #fff;
+    transition: all linear .3s;
+}
+.header .header_right li a:hover{
+    color: #fff;
+}
+.header .header_right li .icon{
+    color: var(--color2);
+    font-size: 20px;
+}
+/* header css end */
+
+/* media css start */
+@media (max-width: 767px) {
+    .header_top {
+        display: none;
+    }
+}
+@media (max-width: 575px) {
+    .header .logo h2{
+        padding-top: 7px;
+        font-size: 25px;
+    }
+    .header .header_right li{
+    padding-left: 5px;
+}
+.header .header_right li:first-child{
+    padding-right: 5px;
+}
+}
+/* media css end */

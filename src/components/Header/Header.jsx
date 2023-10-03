@@ -1,50 +1,67 @@
 import React from "react";
 import "./Header.css";
-import { HiPhone } from "react-icons/hi";
+import HeaderTop from "./HeaderTop";
+import { Link } from "react-router-dom";
+import { HiSearch, HiShoppingCart, HiUser, HiUserAdd } from "react-icons/hi";
 
 const Header = () => {
     return (
         <>
-            <div className="header_top">
+            <HeaderTop></HeaderTop>
+            <div className="header">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-6">
-                            <div className="header_top_left">
-                                <div className="call">
-                                    <p>
-                                        <span>
-                                            <HiPhone></HiPhone>
+                        <div className="col-3 col-sm-3 col-md-3 col-lg-4">
+                            <Link to="/" className="logo">
+                                <h2>
+                                    <span>vig</span>Bag
+                                </h2>
+                            </Link>
+                        </div>
+                        <div className="col-6 col-sm-6 col-md-5 col-lg-4">
+                            <form className="search_box">
+                                <input
+                                    type="text"
+                                    placeholder="Search for products"
+                                />
+                                <button type="submit">
+                                    <HiSearch />
+                                </button>
+                            </form>
+                        </div>
+                        <div className="col-3 col-sm-3 col-md-4 col-lg-4">
+                            <ul className="header_right d-flex pt-2 float-end">
+                                <li>
+                                    <Link to="/login">
+                                        <span className="icon pe-1">
+                                            <HiUser></HiUser>
                                         </span>
-                                        <b>Call Us:</b>
-                                        0123 456 789
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="header_top_right">
-                                <form>
-                                    <label htmlFor="language">Language:</label>
-                                    <select
-                                        name="language"
-                                        id="language"
-                                        defaultValue="english"
-                                    >
-                                        <option value="english">English</option>
-                                        <option value="french">French</option>
-                                        <option value="german">German</option>
-                                    </select>
-
-                                    <label htmlFor="currency">Currency</label>
-                                    <select
-                                        name="currency"
-                                        id="currency"
-                                        defaultValue="usd"
-                                    >
-                                        <option value="usd">USD</option>
-                                        <option value="gbp">GBP</option>
-                                        <option value="eur">EUR</option>
-                                    </select>
-                                </form>
-                            </div>
+                                        <span className="d-none d-lg-inline-block">
+                                            Login
+                                        </span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/register">
+                                        <span className="icon pe-1">
+                                            <HiUserAdd></HiUserAdd>
+                                        </span>
+                                        <span className="d-none d-lg-inline-block">
+                                            Register
+                                        </span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/cart">
+                                        <span className="icon pe-1">
+                                            <HiShoppingCart></HiShoppingCart>
+                                        </span>
+                                        <span className="d-none d-lg-inline-block">
+                                            Basket
+                                        </span>
+                                    </Link>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

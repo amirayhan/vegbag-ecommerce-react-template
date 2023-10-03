@@ -29,6 +29,24 @@ h6 {
     font-weight: 700;
     color: #171717;
 }
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+h4{
+    font-size: 1.25rem;
+}
+h5{
+    font-size: 1rem;
+}
+h6{
+    font-size: 0.875rem;
+}
 p {
     font-size: 16px;
 }
@@ -52,8 +70,8 @@ img {
     letter-spacing: 1px;
     border: none;
     display: inline-block;
-    padding: 10px 30px;
-    border-radius: 5px;
+    padding: 15px 30px;
+    border-radius: 30px;
     transition: all linear 0.3s;
     color: #fff;
     background-color: var(--color2);
