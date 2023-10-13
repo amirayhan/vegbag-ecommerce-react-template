@@ -1,0 +1,14 @@
+.product_item {
+    display: flex;
+    flex-direction: column;
+}
+.product_item p span.bold {
+    font-weight: 700;
+    color: var(--color2);
+    margin-left: 20px;
+}
+.product_item h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

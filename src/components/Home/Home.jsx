@@ -1,11 +1,7 @@
 import React from "react";
 import "./home.css";
 import object1 from "../../assets/object-2.png";
-import {
-    HiOutlineCreditCard,
-    HiOutlineCurrencyDollar,
-    HiOutlineTruck,
-} from "react-icons/hi2";
+import { HiOutlineCreditCard, HiOutlineCurrencyDollar, HiOutlineTruck } from "react-icons/hi2";
 import Categories from "../Categories/Categories";
 import { useLoaderData } from "react-router-dom";
 import Category from "../Category/Category";
@@ -13,6 +9,7 @@ import image1 from "../../assets/category/category_img1.jpg";
 import image2 from "../../assets/category/category_img2.jpg";
 import image3 from "../../assets/category/category_img3.jpg";
 import image4 from "../../assets/category/category_img4.jpg";
+import FlashSale from "../FlashSale/FlashSale";
 
 const Home = () => {
     const categories = useLoaderData();
@@ -39,10 +36,7 @@ const Home = () => {
                                 <h3>Categories</h3>
                                 <ul className="categories_items">
                                     {categories.map((category) => (
-                                        <Category
-                                            key={category.id}
-                                            category={category}
-                                        ></Category>
+                                        <Category key={category.id} category={category}></Category>
                                     ))}
                                 </ul>
                             </div>
@@ -88,37 +82,25 @@ const Home = () => {
                                 <div className="row">
                                     <div className="col-md-6 col-lg-3">
                                         <div className="category_image">
-                                            <img
-                                                src={image1}
-                                                alt="health care"
-                                            />
+                                            <img src={image1} alt="health care" />
                                             <a href="#">HEALTH CARE</a>
                                         </div>
                                     </div>
                                     <div className="col-md-6 col-lg-3">
                                         <div className="category_image">
-                                            <img
-                                                src={image2}
-                                                alt="health care"
-                                            />
+                                            <img src={image2} alt="health care" />
                                             <a href="#">HEALTH & BEAUTY</a>
                                         </div>
                                     </div>
                                     <div className="col-md-6 col-lg-3">
                                         <div className="category_image">
-                                            <img
-                                                src={image3}
-                                                alt="health care"
-                                            />
+                                            <img src={image3} alt="health care" />
                                             <a href="#">VEGETABLES</a>
                                         </div>
                                     </div>
                                     <div className="col-md-6 col-lg-3">
                                         <div className="category_image">
-                                            <img
-                                                src={image4}
-                                                alt="health care"
-                                            />
+                                            <img src={image4} alt="health care" />
                                             <a href="#">COSMETICS & BEAUTY</a>
                                         </div>
                                     </div>
@@ -127,6 +109,9 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="flash_sale">
+                <FlashSale></FlashSale>
             </div>
         </>
     );
