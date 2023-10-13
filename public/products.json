@@ -8,7 +8,7 @@
         "discountPercentage": 0,
         "availability": true,
         "totalSold": 350,
-        "ratings": 4.5,
+        "ratings": 5,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_01.jpg"
@@ -22,7 +22,7 @@
         "discountPercentage": 10,
         "availability": true,
         "totalSold": 220,
-        "ratings": 4.2,
+        "ratings": 3,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_02.jpg"
@@ -33,10 +33,10 @@
         "privPrice": 7.99,
         "newPrice": 1.99,
         "description": "Crisp and healthy broccoli florets. Ideal for stir-fries and steaming.",
-        "discountPercentage": 5,
+        "discountPercentage": 4,
         "availability": true,
         "totalSold": 500,
-        "ratings": 4.7,
+        "ratings": 5,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_03.jpg"
@@ -50,7 +50,7 @@
         "discountPercentage": 0,
         "availability": true,
         "totalSold": 380,
-        "ratings": 4.4,
+        "ratings": 3,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_04.jpg"
@@ -64,7 +64,7 @@
         "discountPercentage": 15,
         "availability": true,
         "totalSold": 180,
-        "ratings": 4.6,
+        "ratings": 5,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_05.jpg"
@@ -78,7 +78,7 @@
         "discountPercentage": 0,
         "availability": true,
         "totalSold": 280,
-        "ratings": 4.3,
+        "ratings": 4,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_06.jpg"
@@ -92,7 +92,7 @@
         "discountPercentage": 5,
         "availability": true,
         "totalSold": 320,
-        "ratings": 4.5,
+        "ratings": 4,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_07.jpg"
@@ -106,7 +106,7 @@
         "discountPercentage": 0,
         "availability": true,
         "totalSold": 260,
-        "ratings": 4.2,
+        "ratings": 3,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_08.jpg"
@@ -120,7 +120,7 @@
         "discountPercentage": 10,
         "availability": true,
         "totalSold": 220,
-        "ratings": 4.4,
+        "ratings": 5,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_09.jpg"
@@ -134,7 +134,7 @@
         "discountPercentage": 0,
         "availability": true,
         "totalSold": 400,
-        "ratings": 4.3,
+        "ratings": 2,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_10.jpg"
@@ -148,7 +148,7 @@
         "discountPercentage": 5,
         "availability": true,
         "totalSold": 300,
-        "ratings": 4.6,
+        "ratings": 4,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_11.jpg"
@@ -162,7 +162,7 @@
         "discountPercentage": 0,
         "availability": true,
         "totalSold": 350,
-        "ratings": 4.2,
+        "ratings": 5,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_12.jpg"
@@ -176,7 +176,7 @@
         "discountPercentage": 15,
         "availability": true,
         "totalSold": 200,
-        "ratings": 4.7,
+        "ratings": 3,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_13.jpg"
@@ -190,7 +190,7 @@
         "discountPercentage": 0,
         "availability": true,
         "totalSold": 280,
-        "ratings": 4.5,
+        "ratings": 4,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_14.jpg"
@@ -204,7 +204,7 @@
         "discountPercentage": 10,
         "availability": true,
         "totalSold": 350,
-        "ratings": 4.8,
+        "ratings": 5,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_15.jpg"
@@ -218,7 +218,7 @@
         "discountPercentage": 0,
         "availability": true,
         "totalSold": 420,
-        "ratings": 4.6,
+        "ratings": 4,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_16.jpg"
@@ -232,7 +232,7 @@
         "discountPercentage": 5,
         "availability": true,
         "totalSold": 320,
-        "ratings": 4.7,
+        "ratings": 2,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_17.jpg"
@@ -246,7 +246,7 @@
         "discountPercentage": 0,
         "availability": true,
         "totalSold": 240,
-        "ratings": 4.3,
+        "ratings": 5,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_18.jpg"
@@ -260,7 +260,7 @@
         "discountPercentage": 0,
         "availability": true,
         "totalSold": 380,
-        "ratings": 4.5,
+        "ratings": 2,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_19.jpg"
@@ -274,7 +274,7 @@
         "discountPercentage": 5,
         "availability": true,
         "totalSold": 300,
-        "ratings": 4.4,
+        "ratings": 4,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_20.jpg"
@@ -288,7 +288,7 @@
         "discountPercentage": 0,
         "availability": true,
         "totalSold": 450,
-        "ratings": 4.2,
+        "ratings": 5,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_21.jpg"
@@ -302,7 +302,7 @@
         "discountPercentage": 10,
         "availability": true,
         "totalSold": 260,
-        "ratings": 4.6,
+        "ratings": 3,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_22.jpg"
@@ -316,7 +316,7 @@
         "discountPercentage": 5,
         "availability": true,
         "totalSold": 340,
-        "ratings": 4.5,
+        "ratings": 2,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_23.jpg"
@@ -330,7 +330,7 @@
         "discountPercentage": 0,
         "availability": true,
         "totalSold": 380,
-        "ratings": 4.4,
+        "ratings": 5,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_24.jpg"
@@ -344,7 +344,7 @@
         "discountPercentage": 0,
         "availability": true,
         "totalSold": 280,
-        "ratings": 4.3,
+        "ratings": 3,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_25.jpg"
@@ -358,7 +358,7 @@
         "discountPercentage": 15,
         "availability": true,
         "totalSold": 200,
-        "ratings": 4.7,
+        "ratings": 4,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_26.jpg"
@@ -372,7 +372,7 @@
         "discountPercentage": 0,
         "availability": true,
         "totalSold": 400,
-        "ratings": 4.6,
+        "ratings": 3,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_27.jpg"
@@ -386,7 +386,7 @@
         "discountPercentage": 5,
         "availability": true,
         "totalSold": 320,
-        "ratings": 4.4,
+        "ratings": 3,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_28.jpg"
@@ -400,7 +400,7 @@
         "discountPercentage": 0,
         "availability": true,
         "totalSold": 260,
-        "ratings": 4.2,
+        "ratings": 5,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_29.jpg"
@@ -414,7 +414,7 @@
         "discountPercentage": 10,
         "availability": true,
         "totalSold": 220,
-        "ratings": 4.5,
+        "ratings": 4,
         "totalRatings": 207,
         "category": "VEGETABLES",
         "image": "./products_image/img_30.jpg"

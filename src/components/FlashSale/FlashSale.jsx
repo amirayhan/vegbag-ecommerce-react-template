@@ -13,7 +13,7 @@ const FlashSale = () => {
         <>
             <div>
                 <div className="container">
-                    <h2>Flash Sale</h2>
+                    <h2 className="pb-2">Flash Sale</h2>
                     <div className="row">
                         {products.map((product) => (
                             <ProductItem key={product.id} product={product}></ProductItem>
