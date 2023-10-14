@@ -10,6 +10,8 @@ import image3 from "../../assets/category/category_img3.jpg";
 import image4 from "../../assets/category/category_img4.jpg";
 import FlashSale from "../FlashSale/FlashSale";
 import JustForYou from "../JustForYou/JustForYou";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
 // import { HiStar, HiOutlineStar } from "react-icons/hi";
 
 const Home = () => {
@@ -17,6 +19,7 @@ const Home = () => {
     const [products, setProducts] = useState([]);
     const [showAll, setShowAll] = useState(false);
     const [details, setDetails] = useState([]);
+
     useEffect(() => {
         fetch("products.json")
             .then((res) => res.json())
@@ -127,38 +130,38 @@ const Home = () => {
             </div>
             <FlashSale products={products} handleClickToView={handleClickToView} details={details}></FlashSale>
 
-            <JustForYou products={products} showAll={showAll} handleToggleClick={handleToggleClick} handleClickToView={handleClickToView}></JustForYou>
+            <JustForYou products={products} showAll={showAll} handleToggleClick={handleToggleClick} handleClickToView={handleClickToView} details={details}></JustForYou>
 
-            <div className="show_details">
-                {details.map((p) => (
-                    <h1>rayhan</h1>
-                    // <div key={p.id} className="product_details d-flex">
-                    //     <div className="image">
-                    //         <img src={p.image} alt={p.title} />
-                    //     </div>
-                    //     <div className="details">
-                    //         <h3>{p.title}</h3>
-                    //         <div className="d-flex align-items-center">
-                    //             <div className="d-flex star">
-                    //                 {[...Array(p.ratings)].map((_, index) => (
-                    //                     <HiStar key={index}></HiStar>
-                    //                 ))}
-                    //                 {[...Array(5 - p.ratings)].map((_, index) => (
-                    //                     <HiOutlineStar key={index}></HiOutlineStar>
-                    //                 ))}
-                    //             </div>
-                    //             <p className="pt-3">({p.totalRatings})</p>
-                    //         </div>
-                    //         <p>
-                    //             <span className="text-decoration-line-through">${p.privPrice}</span>
-                    //             <span className="bold">${p.newPrice}</span>
-                    //         </p>
+            {/* <div className="show_details">
+                {details.map((p) => 
+                    
+                    <div key={p.id} className="product_details d-flex">
+                        <div className="image">
+                            <img src={p.image} alt={p.title} />
+                        </div>
+                        <div className="details">
+                            <h3>{p.title}</h3>
+                            <div className="d-flex align-items-center">
+                                <div className="d-flex star">
+                                    {[...Array(p.ratings)].map((_, index) => (
+                                        <HiStar key={index}></HiStar>
+                                    ))}
+                                    {[...Array(5 - p.ratings)].map((_, index) => (
+                                        <HiOutlineStar key={index}></HiOutlineStar>
+                                    ))}
+                                </div>
+                                <p className="pt-3">({p.totalRatings})</p>
+                            </div>
+                            <p>
+                                <span className="text-decoration-line-through">${p.privPrice}</span>
+                                <span className="bold">${p.newPrice}</span>
+                            </p>
 
-                    //         <p>{p.description}</p>
-                    //     </div>
-                    // </div>
-                ))}
-            </div>
+                            <p>{p.description}</p>
+                        </div>
+                    </div>
+                )}
+            </div> */}
         </>
     );
 };
