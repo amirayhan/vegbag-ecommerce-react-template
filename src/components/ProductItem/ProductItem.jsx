@@ -2,8 +2,9 @@ import React from "react";
 import "./ProductItem.css";
 import { HiStar, HiOutlineStar, HiOutlineShoppingCart, HiOutlineEye, HiOutlineHeart } from "react-icons/hi";
 
-const ProductItem = ({ product }) => {
+const ProductItem = ({ product, handleClickToView }) => {
     const { image, title, privPrice, newPrice, ratings, totalRatings } = product;
+
     return (
         <div className="product_item">
             <div className="image">
@@ -15,7 +16,7 @@ const ProductItem = ({ product }) => {
                         </button>
                     </li>
                     <li>
-                        <button className="shadow-sm">
+                        <button onClick={() => handleClickToView(product)} className="shadow-sm">
                             <HiOutlineEye></HiOutlineEye>
                         </button>
                     </li>
