@@ -19,8 +19,8 @@ const JustForYou = () => {
                 <h2>Just for You</h2>
                 <div className="row">
                     {products.slice(0, showAll ? products.length : 12).map((product) => (
-                        <div className="col-lg-3 col-md-4 col-sm-4 col-6">
-                            <ProductItem key={product.id} product={product}></ProductItem>
+                        <div key={product.id} className="col-lg-3 col-md-4 col-sm-4 col-6">
+                            <ProductItem product={product}></ProductItem>
                         </div>
                     ))}
                 </div>

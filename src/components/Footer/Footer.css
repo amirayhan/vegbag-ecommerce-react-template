@@ -38,3 +38,16 @@
     background: var(--color2);
     color: #fff;
 }
+.footer_bottom {
+    background: var(--color3);
+    padding-top: 30px;
+    padding-bottom: 17px;
+    text-align: center;
+}
+.footer_bottom p a {
+    color: var(--color2);
+    transition: all linear 0.3s;
+}
+.footer_bottom p a:hover {
+    color: #fff;
+}
