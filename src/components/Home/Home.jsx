@@ -10,6 +10,7 @@ import image2 from "../../assets/category/category_img2.jpg";
 import image3 from "../../assets/category/category_img3.jpg";
 import image4 from "../../assets/category/category_img4.jpg";
 import FlashSale from "../FlashSale/FlashSale";
+import JustForYou from "../JustForYou/JustForYou";
 
 const Home = () => {
     const categories = useLoaderData();
@@ -110,9 +111,9 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="flash_sale">
-                <FlashSale></FlashSale>
-            </div>
+            <FlashSale></FlashSale>
+
+            <JustForYou></JustForYou>
         </>
     );
 };

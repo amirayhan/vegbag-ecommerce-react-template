@@ -5,6 +5,51 @@
     margin: 0 10px;
     overflow: hidden;
 }
+.product_item .image {
+    position: relative;
+}
+.product_item .image img {
+    width: 100%;
+}
+.product_item .image .overlay li {
+    position: absolute;
+    top: 10px;
+    right: -100px;
+    margin-bottom: 5px;
+    transition: all linear 0.4s;
+}
+.product_item .image.overlay li:first-child {
+    top: 10px;
+}
+.product_item .image .overlay li:nth-child(2) {
+    top: 60px;
+}
+.product_item .image .overlay li:last-child {
+    top: 110px;
+}
+.product_item:hover .image .overlay li:first-child {
+    right: 10px;
+}
+.product_item:hover .image .overlay li:nth-child(2) {
+    right: 10px;
+    transition-delay: 0.1s;
+}
+.product_item:hover .image .overlay li:last-child {
+    right: 10px;
+    transition-delay: 0.2s;
+}
+.product_item .image .overlay li button {
+    background: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 17px;
+    transition: all linear 0.2s;
+}
+.product_item .image .overlay li button:hover {
+    background: var(--color2);
+    color: #fff;
+}
 .product_item p span.bold {
     font-weight: 700;
     color: var(--color2);
@@ -18,11 +63,6 @@
 }
 .product_item .star {
     color: orange;
-    font-size: 25px;
+    font-size: 20px;
     padding: 7px 0;
-}
-.slick-arrow {
-    background-color: #000;
-    width: 50px;
-    height: 50px;
 }

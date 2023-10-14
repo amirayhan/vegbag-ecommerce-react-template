@@ -18,7 +18,7 @@ const FlashSale = () => {
         autoplay: true,
         speed: 500,
         arrows: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 200000,
         slidesToShow: 5,
         slidesToScroll: 1,
         responsive: [
