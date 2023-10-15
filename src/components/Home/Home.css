@@ -1,12 +1,12 @@
 /* banner css start */
-.banner{
+.banner {
     padding-top: 200px;
     padding-bottom: 200px;
-    background: url('../../assets/banner.jpg') no-repeat center/cover;
+    background: url("../../assets/banner.jpg") no-repeat center/cover;
     position: relative;
     overflow: hidden;
 }
-.banner .image1{
+.banner .image1 {
     position: absolute;
     bottom: 20px;
     left: 35%;
@@ -14,17 +14,17 @@
     animation: shake 4s ease infinite;
 }
 @keyframes shake {
-  0% {
-    bottom: 20px;
-  }
-  50% {
-    bottom: 30px;
-  }
-  100% {
-    bottom: 20px;
-  }
+    0% {
+        bottom: 20px;
+    }
+    50% {
+        bottom: 30px;
+    }
+    100% {
+        bottom: 20px;
+    }
 }
-.banner .image2{
+.banner .image2 {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -33,115 +33,213 @@
     animation: shake2 4s ease infinite;
 }
 @keyframes shake2 {
-  0% {
-    right: 20px;
-  }
-  50% {
-    right: 30px;
-  }
-  100% {
-    right: 20px;
-  }
+    0% {
+        right: 20px;
+    }
+    50% {
+        right: 30px;
+    }
+    100% {
+        right: 20px;
+    }
 }
 /* banner css end */
 
 /* category_and_services css start */
 
-.category_and_services{
-  padding-top: 30px;
+.category_and_services {
+    padding-top: 30px;
 }
-.categories{
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  margin-bottom: 30px;
+.categories {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 30px;
 }
-.categories h3{
-  background: var(--color1);
-  padding: 16px;
-  color: #fff;
-  text-transform: uppercase;
-  border-radius: 10px 10px 0 0;
+.categories h3 {
+    background: var(--color1);
+    padding: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 10px 10px 0 0;
 }
-.categories_items{
-  margin-bottom: 30px;
+.categories_items {
+    margin-bottom: 30px;
 }
-.categories_items .category_item:last-child{
-  border-radius: 0 0 10px 10px;
+.categories_items .category_item:last-child {
+    border-radius: 0 0 10px 10px;
 }
-.category_and_services .services .services_item{
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  align-items: center;
-  justify-content: center;
+.category_and_services .services .services_item {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
 }
-.category_and_services .services .services_item span{
-  width: 70px;
-  height: 70px;
-  border: 2px solid var(--color2);
-  border-radius: 50%;
-  text-align: center;
-  line-height: 60px;
-  font-size: 35px;
-  color:var(--color3);
+.category_and_services .services .services_item span {
+    width: 70px;
+    height: 70px;
+    border: 2px solid var(--color2);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 35px;
+    color: var(--color3);
 }
-.category_and_services .services .services_item .item_content{
-  padding-left: 10px;
+.category_and_services .services .services_item .item_content {
+    padding-left: 10px;
 }
-.category_and_services .services .services_item .item_content h3{
-  padding-top: 18px;
-  padding-bottom: 5px;
+.category_and_services .services .services_item .item_content h3 {
+    padding-top: 18px;
+    padding-bottom: 5px;
 }
-.category_and_services .services .category_image{
-  margin-bottom: 30px;
-  position: relative;
-  overflow: hidden;
+.category_and_services .services .category_image {
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
 }
-.category_and_services .services .category_image a{
-  position: absolute;
-  bottom:-64px;
-  left: 50%;
-  width: 100%;
-  transform: translateX(-50%);
-  text-align: center;
-  background: rgba(0, 0, 0, 0.80);
-  padding: 20px 0;
-  color: #fff;
-  transition: all linear .3s;
-  --webkit--transition: all linear .3s;
-  --moz--transition: all linear .3s;
-  --ms--transition: all linear .3s;
-  --o--transition: all linear .3s;
+.category_and_services .services .category_image a {
+    position: absolute;
+    bottom: -64px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    color: #fff;
+    transition: all linear 0.3s;
+    --webkit--transition: all linear 0.3s;
+    --moz--transition: all linear 0.3s;
+    --ms--transition: all linear 0.3s;
+    --o--transition: all linear 0.3s;
 }
-.category_and_services .services .category_image:hover a{
-  bottom: 0;
+.category_and_services .services .category_image:hover a {
+    bottom: 0;
 }
 /* category_and_services css end */
+
+/* modal css start */
+.modal-dialog {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.modal-dialog .close_btn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    background: var(--color2);
+    border: none;
+    color: #fff;
+    transition: all linear 0.3s;
+}
+.modal-dialog .close_btn:hover {
+    background: var(--color1);
+}
+.modal-dialog .modal_body {
+    padding: 25px;
+}
+.modal-dialog .modal_body h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 10px;
+}
+.modal-dialog .modal_body .star {
+    color: orange;
+    font-size: 20px;
+    padding: 7px 0;
+}
+.modal-dialog .modal_body .price {
+    font-size: 18px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #efefef;
+}
+.modal-dialog .modal_body .price .bold {
+    font-size: 30px;
+    margin-left: 10px;
+    color: var(--color2);
+}
+.modal-dialog .modal_body .description {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #efefef;
+}
+.modal-dialog .modal_body .quantity {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #efefef;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.modal-dialog .modal_body .quantity .item {
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid #ededed;
+}
+.modal-dialog .modal_body .quantity .item input {
+    width: 50px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+.modal-dialog .modal_body .quantity .item .q_btn {
+    width: 25px;
+    height: 25px;
+    background: #e6e6e6;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    font-size: 15px;
+    border: none;
+    color: var(--color4);
+}
+.modal-dialog .modal_body .cart_wishlist {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.modal-dialog .modal_body .cart_wishlist a {
+    color: var(--color3);
+    transition: all linear 0.3s;
+}
+.modal-dialog .modal_body .cart_wishlist a:hover span {
+    color: red;
+}
+.modal-dialog .modal_body .cart_wishlist a span {
+    font-size: 20px;
+}
+
+/* modal css end */
 
 /* media css start */
 
 @media (max-width: 575px) {
-    .banner{
+    .banner {
         padding-top: 100px;
         padding-bottom: 100px;
     }
-    .banner .banner_content h1{
-      font-size: 2.5rem;
+    .banner .banner_content h1 {
+        font-size: 2.5rem;
     }
-    .banner .banner_content p{
+    .banner .banner_content p {
         padding-right: 100px;
     }
-    .banner .image1, .banner .image2{
+    .banner .image1,
+    .banner .image2 {
         display: none;
     }
 }
 @media (max-width: 767px) {
-    .banner .image1, .banner .image2{
+    .banner .image1,
+    .banner .image2 {
         display: none;
     }
-    .category_and_services .services .services_item{
-      margin-bottom: 30px;
+    .category_and_services .services .services_item {
+        margin-bottom: 30px;
     }
 }
 /* media css end */
-

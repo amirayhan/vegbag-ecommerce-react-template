@@ -12,7 +12,8 @@ import FlashSale from "../FlashSale/FlashSale";
 import JustForYou from "../JustForYou/JustForYou";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import { HiStar, HiOutlineStar } from "react-icons/hi";
+import { HiStar, HiOutlineStar, HiX, HiOutlineHeart } from "react-icons/hi";
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaGooglePlusG } from "react-icons/fa6";
 
 const Home = () => {
     const categories = useLoaderData();
@@ -136,67 +137,96 @@ const Home = () => {
 
             <JustForYou products={products} showAll={showAll} handleToggleClick={handleToggleClick} handleClickToView={handleClickToView} details={details} handleShow={handleShow}></JustForYou>
 
-            {/* <div className="show_details">
-                {details.map((p) => 
-                    
-                    <div key={p.id} className="product_details d-flex">
-                        <div className="image">
-                            <img src={p.image} alt={p.title} />
-                        </div>
-                        <div className="details">
-                            <h3>{p.title}</h3>
-                            <div className="d-flex align-items-center">
-                                <div className="d-flex star">
-                                    {[...Array(p.ratings)].map((_, index) => (
-                                        <HiStar key={index}></HiStar>
-                                    ))}
-                                    {[...Array(5 - p.ratings)].map((_, index) => (
-                                        <HiOutlineStar key={index}></HiOutlineStar>
-                                    ))}
-                                </div>
-                                <p className="pt-3">({p.totalRatings})</p>
-                            </div>
-                            <p>
-                                <span className="text-decoration-line-through">${p.privPrice}</span>
-                                <span className="bold">${p.newPrice}</span>
-                            </p>
+            {details.map((p) => (
+                <div key={p.id}>
+                    <Modal show={show} onHide={handleClose}>
+                        <button className="close_btn" onClick={handleClose}>
+                            <HiX />
+                        </button>
 
-                            <p>{p.description}</p>
-                        </div>
-                    </div>
-                )}
-            </div> */}
-
-            <Modal show={show} onHide={handleClose}>
-                <button onClick={handleClose}>x</button>
-                {details.map((p) => (
-                    <>
-                        <div key={p.id} className="modal_body d-flex">
-                            <div className="image">
-                                <img src={p.image} alt={p.title} />
-                            </div>
-                            <div className="body">
-                                <h4>{p.title}</h4>
-                                <div className="d-flex align-items-center">
-                                    <div className="d-flex star">
-                                        {[...Array(p.ratings)].map((_, index) => (
-                                            <HiStar key={index}></HiStar>
-                                        ))}
-                                        {[...Array(5 - p.ratings)].map((_, index) => (
-                                            <HiOutlineStar key={index}></HiOutlineStar>
-                                        ))}
+                        <div className="modal_body">
+                            <div className="row">
+                                <div className="col-lg-6">
+                                    <div className="image">
+                                        <img src={p.image} alt={p.title} />
                                     </div>
-                                    <p className="pt-3">({p.totalRatings})</p>
                                 </div>
-                                <p>
-                                    <span className="text-decoration-line-through">${p.privPrice}</span>
-                                    <span className="bold">${p.newPrice}</span>
-                                </p>
+                                <div className="col-lg-6">
+                                    <div className="body">
+                                        <h3>{p.title}</h3>
+                                        <div className="d-flex align-items-center">
+                                            <div className="d-flex star">
+                                                {[...Array(p.ratings)].map((_, index) => (
+                                                    <HiStar key={index}></HiStar>
+                                                ))}
+                                                {[...Array(5 - p.ratings)].map((_, index) => (
+                                                    <HiOutlineStar key={index}></HiOutlineStar>
+                                                ))}
+                                            </div>
+                                            <p className="pt-3">{p.totalRatings}</p>
+                                        </div>
+                                        <p className="price">
+                                            <span className="text-decoration-line-through">${p.privPrice}</span>
+                                            <span className="bold">${p.newPrice}</span>
+                                        </p>
+                                        <div className="description d-flex">
+                                            <h5 className="me-2 ">Description:</h5>
+                                            <p>{p.description}</p>
+                                        </div>
+                                        <div className="quantity">
+                                            <h5>Quantity:</h5>
+                                            <div className="item">
+                                                <button className="q_btn">-</button>
+                                                <input type="text" />
+                                                <button className="q_btn">+</button>
+                                            </div>
+                                        </div>
+                                        <div className="cart_wishlist d-flex align-items-center gap-2">
+                                            <button className="button1">Add to Cart</button>
+                                            <a href="#">
+                                                <span>
+                                                    <HiOutlineHeart />
+                                                </span>
+                                                Add to Wishlist
+                                            </a>
+                                        </div>
+                                        <div className="share d-flex align-items-center">
+                                            <h5>Share:</h5>
+                                            <ul className="social_icon d-flex gap-4">
+                                                <li>
+                                                    <a href="#">
+                                                        <FaFacebookF></FaFacebookF>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <FaTwitter></FaTwitter>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <FaLinkedinIn></FaLinkedinIn>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <FaInstagram></FaInstagram>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <FaGooglePlusG></FaGooglePlusG>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </>
-                ))}
-            </Modal>
+                    </Modal>
+                </div>
+            ))}
         </>
     );
 };
