@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
     margin: 0 10px;
-    overflow: hidden;
 }
 .product_item .image {
     position: relative;
@@ -14,9 +13,11 @@
 .product_item .image .overlay li {
     position: absolute;
     top: 10px;
-    right: -100px;
+    right: 50px;
     margin-bottom: 5px;
     transition: all linear 0.4s;
+    visibility: hidden;
+    opacity: 0;
 }
 .product_item .image.overlay li:first-child {
     top: 10px;
@@ -26,6 +27,10 @@
 }
 .product_item .image .overlay li:last-child {
     top: 110px;
+}
+.product_item:hover .image .overlay li {
+    visibility: visible;
+    opacity: 1;
 }
 .product_item:hover .image .overlay li:first-child {
     right: 10px;

@@ -1,16 +1,9 @@
 import React from "react";
 import "./ProductItem.css";
 import { HiStar, HiOutlineStar, HiOutlineShoppingCart, HiOutlineEye, HiOutlineHeart } from "react-icons/hi";
-import { useState } from "react";
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
 
-const ProductItem = ({ product, handleClickToView, details }) => {
+const ProductItem = ({ product, handleClickToView, handleShow }) => {
     const { image, title, privPrice, newPrice, ratings, totalRatings } = product;
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
 
     return (
         <>
@@ -58,19 +51,6 @@ const ProductItem = ({ product, handleClickToView, details }) => {
                     <span className="bold">${newPrice}</span>
                 </p>
             </div>
-            <Modal show={show} onHide={handleClose} backdrop="static" keyboard={false}>
-                <Modal.Header closeButton>
-                    <h1>{details.title}</h1>
-                </Modal.Header>
-                <Modal.Body>{details.id}</Modal.Body>
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
-                        Close
-                    </Button>
-                    <Button variant="primary">Understood</Button>
-                </Modal.Footer>
-            </Modal>
-            ;
         </>
     );
 };

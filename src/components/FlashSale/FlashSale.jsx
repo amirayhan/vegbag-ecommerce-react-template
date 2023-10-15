@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 
-const FlashSale = ({ products, handleClickToView, details }) => {
+const FlashSale = ({ products, handleClickToView, details, handleShow }) => {
     const settings = {
         infinite: true,
         autoplay: true,
@@ -49,7 +49,7 @@ const FlashSale = ({ products, handleClickToView, details }) => {
                     <div className="row">
                         <Slider {...settings}>
                             {products.map((product) => (
-                                <ProductItem key={product.id} product={product} handleClickToView={handleClickToView} details={details}></ProductItem>
+                                <ProductItem key={product.id} product={product} handleClickToView={handleClickToView} details={details} handleShow={handleShow}></ProductItem>
                             ))}
                         </Slider>
                     </div>

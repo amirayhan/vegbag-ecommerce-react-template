@@ -12,13 +12,17 @@ import FlashSale from "../FlashSale/FlashSale";
 import JustForYou from "../JustForYou/JustForYou";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-// import { HiStar, HiOutlineStar } from "react-icons/hi";
+import { HiStar, HiOutlineStar } from "react-icons/hi";
 
 const Home = () => {
     const categories = useLoaderData();
     const [products, setProducts] = useState([]);
     const [showAll, setShowAll] = useState(false);
     const [details, setDetails] = useState([]);
+
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     useEffect(() => {
         fetch("products.json")
@@ -128,9 +132,9 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <FlashSale products={products} handleClickToView={handleClickToView} details={details}></FlashSale>
+            <FlashSale products={products} handleClickToView={handleClickToView} details={details} handleShow={handleShow}></FlashSale>
 
-            <JustForYou products={products} showAll={showAll} handleToggleClick={handleToggleClick} handleClickToView={handleClickToView} details={details}></JustForYou>
+            <JustForYou products={products} showAll={showAll} handleToggleClick={handleToggleClick} handleClickToView={handleClickToView} details={details} handleShow={handleShow}></JustForYou>
 
             {/* <div className="show_details">
                 {details.map((p) => 
@@ -162,6 +166,37 @@ const Home = () => {
                     </div>
                 )}
             </div> */}
+
+            <Modal show={show} onHide={handleClose}>
+                <button onClick={handleClose}>x</button>
+                {details.map((p) => (
+                    <>
+                        <div key={p.id} className="modal_body d-flex">
+                            <div className="image">
+                                <img src={p.image} alt={p.title} />
+                            </div>
+                            <div className="body">
+                                <h4>{p.title}</h4>
+                                <div className="d-flex align-items-center">
+                                    <div className="d-flex star">
+                                        {[...Array(p.ratings)].map((_, index) => (
+                                            <HiStar key={index}></HiStar>
+                                        ))}
+                                        {[...Array(5 - p.ratings)].map((_, index) => (
+                                            <HiOutlineStar key={index}></HiOutlineStar>
+                                        ))}
+                                    </div>
+                                    <p className="pt-3">({p.totalRatings})</p>
+                                </div>
+                                <p>
+                                    <span className="text-decoration-line-through">${p.privPrice}</span>
+                                    <span className="bold">${p.newPrice}</span>
+                                </p>
+                            </div>
+                        </div>
+                    </>
+                ))}
+            </Modal>
         </>
     );
 };
