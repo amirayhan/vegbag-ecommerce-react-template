@@ -139,6 +139,9 @@
 .modal-dialog .close_btn:hover {
     background: var(--color1);
 }
+.modal-dialog .modal_body img{
+    width: 100%;
+}
 .modal-dialog .modal_body {
     padding: 25px;
 }
@@ -212,7 +215,27 @@
 .modal-dialog .modal_body .cart_wishlist a span {
     font-size: 20px;
 }
-
+.modal-dialog .modal_body .share .social_icon{
+    margin-left: 10px;
+}
+.modal-dialog .modal_body .share .social_icon a {
+    font-size: 15px;
+    color: var(--color4);
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    display: inline-block;
+    border: 2px solid #ededed;
+    border-radius: 50%;
+    text-align: center;
+    transition: all linear .3s;
+}
+.modal-dialog .modal_body .share .social_icon a:hover{
+    color: var(--color2);
+}
+.modal {
+    padding-left: 0 !important;
+}
 /* modal css end */
 
 /* media css start */
