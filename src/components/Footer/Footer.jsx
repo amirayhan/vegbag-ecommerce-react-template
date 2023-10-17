@@ -14,7 +14,7 @@ const Footer = () => {
                                 <span>vig</span>Bag
                             </h2>
                         </Link>
-                        <ul className="menu d-flex gap-5">
+                        <ul className="menu d-flex gap-3">
                             <li>
                                 <a href="#">About Us</a>
                             </li>
@@ -63,7 +63,8 @@ const Footer = () => {
             </div>
             <div className="footer_bottom">
                 <p className="text-white">
-                    All Rights ReservedCopyrighted by ©2023 <a href="https://github.com/amirayhan">amiRayhan</a>
+                    All Rights ReservedCopyrighted by ©2023{" "}
+                    <a href="https://github.com/amirayhan">amiRayhan</a>
                 </p>
             </div>
         </>

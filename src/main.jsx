@@ -5,6 +5,8 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Main from "./components/Layout/Main";
 import Home from "./components/Home/Home";
+import Checkout from "./components/Checkout/Checkout";
+import ViewCart from "./components/ViewCart/ViewCart";
 
 const router = createBrowserRouter([
     {
@@ -15,6 +17,14 @@ const router = createBrowserRouter([
                 path: "/",
                 element: <Home></Home>,
                 loader: () => fetch("categories.json"),
+            },
+            {
+                path: "/viewcart",
+                element: <ViewCart></ViewCart>,
+            },
+            {
+                path: "checkout",
+                element: <Checkout></Checkout>,
             },
         ],
     },

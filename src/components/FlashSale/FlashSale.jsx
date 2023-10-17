@@ -10,8 +10,8 @@ const FlashSale = ({ products, handleClickToView, details, handleShow }) => {
         infinite: true,
         autoplay: true,
         speed: 500,
-        arrows: true,
-        autoplaySpeed: 200000,
+        arrows: false,
+        autoplaySpeed: 2000,
         slidesToShow: 5,
         slidesToScroll: 1,
         responsive: [

@@ -60,9 +60,10 @@ const Header = ({ handleShow }) => {
                                         <span className="icon pe-1">
                                             <HiShoppingCart></HiShoppingCart>
                                         </span>
-                                        <span className="text-white d-none d-lg-inline-block">
+                                        <span className="basket text-white d-none d-lg-inline-block">
                                             Basket
                                         </span>
+                                        <span className="quantity">0</span>
                                     </button>
                                 </li>
                             </ul>

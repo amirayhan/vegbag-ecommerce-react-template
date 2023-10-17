@@ -100,8 +100,23 @@
 .header .header_right li .cart_btn span{
     transition: all linear .3s;
 }
-.header .header_right li .cart_btn:hover span{
+.header .header_right li .cart_btn:hover span.basket{
     color: var(--color2) !important;
+}
+.header .header_right li{
+    position: relative;
+}
+.header .header_right li span.quantity {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    background: red;
+    font-size: 12px;
+    line-height: 20px;
+    border-radius: 50%;
 }
 /* header css end */
 

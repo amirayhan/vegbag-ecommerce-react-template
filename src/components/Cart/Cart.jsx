@@ -39,10 +39,10 @@ const Cart = ({ show, handleClose }) => {
                 <h3>$25</h3>
             </div>
             <div className="cart_checkout_btn d-flex justify-content-around">
-                <Link className="button1" to="/ViewCart">
+                <Link onClick={handleClose} className="button1" to="/ViewCart">
                     View Cart
                 </Link>
-                <Link className="button2" to="/Checkout">
+                <Link onClick={handleClose} className="button2" to="/Checkout">
                     Checkout
                 </Link>
             </div>
