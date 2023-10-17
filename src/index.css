@@ -84,6 +84,7 @@ img {
     border: none;
     display: inline-block;
     padding: 15px 30px;
+    border: 2px solid var(--color2);
     border-radius: 30px;
     transition: all linear 0.3s;
     color: #fff;
@@ -94,4 +95,25 @@ img {
 }
 .button1:hover {
     background-color: #518607;
+    border: 2px solid #518607;
+}
+.button2 {
+    font-family: Heebo, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid var(--color2);
+    border-radius: 30px;
+    color: var(--color3);
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all linear 0.3s;
+}
+.button2:hover {
+    background-color: var(--color2);
+    color: #fff;
 }

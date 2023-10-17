@@ -1,0 +1,113 @@
+.offcanvas .close_btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 25px;
+    transition: all linear .3s;
+   
+}
+.offcanvas .close_btn:hover{
+    transform: rotate(90deg);
+}
+.offcanvas{
+    padding: 20px;
+}
+.offcanvas h4.heading{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dedede;
+}
+.offcanvas .cart_item{
+    position: relative;
+    border-bottom: 1px solid #dedede;
+    padding: 20px 0;
+}
+.offcanvas .cart_item .image{
+    padding-right: 15px;
+}
+.offcanvas .cart_item .image img{
+    width: 110px;
+}
+.offcanvas .cart_item .cart_text h5{
+    padding-bottom: 5px;
+}
+.offcanvas .cart_item .cart_text p.price{
+    margin-bottom: 0;
+    padding: 10px 0;
+    font-size: 19px;
+    color: var(--color2);
+}
+.offcanvas .cart_item .quantity .q_btn{
+    border: none;
+    background: #ccc;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 20px;
+}
+.offcanvas .cart_item .quantity input{
+    width: 50px;
+    border: 1px solid #ccc;
+    padding: 2px 0;
+    text-align: center;
+}
+.offcanvas .cart_item .quantity {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #efefef;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 0!important;
+}
+.offcanvas .cart_item .quantity {
+    margin-left: 15px;
+    padding: 3px 4px;
+    border-radius: 20px;
+    border: 1px solid #ededed;
+}
+.offcanvas .cart_item .quantity  input {
+    width: 50px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+.offcanvas .cart_item .quantity .q_btn {
+    width: 25px;
+    height: 25px;
+    background: #e6e6e6;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    font-size: 15px;
+    border: none;
+    color: var(--color4);
+    transition:  all linear .3s;
+}
+.offcanvas .cart_item .quantity .q_btn:hover{
+    background: #d1d1d1;
+}
+.offcanvas .cart_item  button.remove_item{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    border: none;
+    background: #ffe8e8;
+    transition: all linear .3s;
+}
+.offcanvas .cart_item  button.remove_item:hover{
+    background: #f9caca;
+}
+.offcanvas  .subtotal{
+    padding: 20px 0;
+}
+.offcanvas .subtotal h3{
+    color: var(--color2);
+}
+

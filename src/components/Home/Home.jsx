@@ -222,7 +222,7 @@ const Home = () => {
                                                 <button className="q_btn">
                                                     -
                                                 </button>
-                                                <input type="text" />
+                                                <input type="text" value={1} />
                                                 <button className="q_btn">
                                                     +
                                                 </button>

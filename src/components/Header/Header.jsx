@@ -1,10 +1,11 @@
-import React from "react";
+import { React, useState } from "react";
 import "./header.css";
 import HeaderTop from "./HeaderTop";
 import { Link } from "react-router-dom";
 import { HiSearch, HiShoppingCart, HiUser, HiUserAdd } from "react-icons/hi";
+import { Button } from "react-bootstrap";
 
-const Header = () => {
+const Header = ({ handleShow }) => {
     return (
         <>
             <HeaderTop></HeaderTop>
@@ -52,14 +53,17 @@ const Header = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/cart">
+                                    <button
+                                        onClick={handleShow}
+                                        className="cart_btn"
+                                    >
                                         <span className="icon pe-1">
                                             <HiShoppingCart></HiShoppingCart>
                                         </span>
-                                        <span className="d-none d-lg-inline-block">
+                                        <span className="text-white d-none d-lg-inline-block">
                                             Basket
                                         </span>
-                                    </Link>
+                                    </button>
                                 </li>
                             </ul>
                         </div>
