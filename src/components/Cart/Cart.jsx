@@ -5,18 +5,17 @@ import { HiX } from "react-icons/hi";
 import product_img from "../../../public/products_image/img_01.jpg";
 import { Link } from "react-router-dom";
 
-const Cart = ({ show, handleClose }) => {
+const Cart = ({ show, handleClose, cart }) => {
+    let quantity = 0;
+    for (const product of cart) {
+        quantity = quantity + product.quantity;
+    }
     return (
-        <Offcanvas
-            show={show}
-            onHide={handleClose}
-            placement="end"
-            scroll="true"
-        >
+        <Offcanvas show={show} onHide={handleClose} placement="end" scroll="true">
             <button className="close_btn" onClick={handleClose}>
                 <HiX />
             </button>
-            <h4 className="heading">Your Cart</h4>
+            <h4 className="heading">Your Cart {quantity}</h4>
             <div className="cart_item d-flex">
                 <div className="image">
                     <img src={product_img} alt="product image" />

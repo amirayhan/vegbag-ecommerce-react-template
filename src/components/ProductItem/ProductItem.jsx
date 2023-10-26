@@ -1,9 +1,11 @@
 import React from "react";
 import "./ProductItem.css";
 import { HiStar, HiOutlineStar, HiOutlineShoppingCart, HiOutlineEye, HiOutlineHeart } from "react-icons/hi";
+import { useOutletContext } from "react-router-dom";
 
 const ProductItem = ({ product, handleClickToView, handleShow }) => {
     const { image, title, privPrice, newPrice, ratings, totalRatings } = product;
+    const handleAddToCart = useOutletContext();
 
     return (
         <>
@@ -12,7 +14,7 @@ const ProductItem = ({ product, handleClickToView, handleShow }) => {
                     <img src={image} alt={title} />
                     <ul className="overlay">
                         <li>
-                            <button className="shadow-sm">
+                            <button onClick={() => handleAddToCart(product)} className="shadow-sm">
                                 <HiOutlineShoppingCart></HiOutlineShoppingCart>
                             </button>
                         </li>

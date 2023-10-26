@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": "1",
         "title": "Organic Spinach",
         "privPrice": 7.99,
         "newPrice": 2.99,
@@ -11,10 +11,11 @@
         "ratings": 5,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_01.jpg"
+        "image": "./products_image/img_01.jpg",
+        "quantity": 0
     },
     {
-        "id": 2,
+        "id": "2",
         "title": "Tomatoes (Pack of 6)",
         "privPrice": 7.99,
         "newPrice": 4.49,
@@ -25,10 +26,11 @@
         "ratings": 3,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_02.jpg"
+        "image": "./products_image/img_02.jpg",
+        "quantity": 0
     },
     {
-        "id": 3,
+        "id": "3",
         "title": "Fresh Broccoli",
         "privPrice": 7.99,
         "newPrice": 1.99,
@@ -39,10 +41,11 @@
         "ratings": 5,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_03.jpg"
+        "image": "./products_image/img_03.jpg",
+        "quantity": 0
     },
     {
-        "id": 4,
+        "id": "4",
         "title": "Carrots (Bag of 10)",
         "privPrice": 7.99,
         "newPrice": 3.99,
@@ -53,10 +56,11 @@
         "ratings": 3,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_04.jpg"
+        "image": "./products_image/img_04.jpg",
+        "quantity": 0
     },
     {
-        "id": 5,
+        "id": "5",
         "title": "Organic Kale",
         "privPrice": 7.99,
         "newPrice": 3.49,
@@ -67,10 +71,11 @@
         "ratings": 5,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_05.jpg"
+        "image": "./products_image/img_05.jpg",
+        "quantity": 0
     },
     {
-        "id": 6,
+        "id": "6",
         "title": "Green Bell Peppers (Pack of 4)",
         "privPrice": 7.99,
         "newPrice": 2.99,
@@ -81,10 +86,11 @@
         "ratings": 4,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_06.jpg"
+        "image": "./products_image/img_06.jpg",
+        "quantity": 0
     },
     {
-        "id": 7,
+        "id": "7",
         "title": "Cucumbers (Pack of 8)",
         "privPrice": 7.99,
         "newPrice": 2.49,
@@ -95,10 +101,11 @@
         "ratings": 4,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_07.jpg"
+        "image": "./products_image/img_07.jpg",
+        "quantity": 0
     },
     {
-        "id": 8,
+        "id": "8",
         "title": "Zucchini (Pack of 6)",
         "privPrice": 7.99,
         "newPrice": 3.49,
@@ -109,10 +116,11 @@
         "ratings": 3,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_08.jpg"
+        "image": "./products_image/img_08.jpg",
+        "quantity": 0
     },
     {
-        "id": 9,
+        "id": "9",
         "title": "Fresh Cauliflower",
         "privPrice": 7.99,
         "newPrice": 2.79,
@@ -123,10 +131,11 @@
         "ratings": 5,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_09.jpg"
+        "image": "./products_image/img_09.jpg",
+        "quantity": 0
     },
     {
-        "id": 10,
+        "id": "10",
         "title": "Organic Cilantro",
         "privPrice": 7.99,
         "newPrice": 1.99,
@@ -137,10 +146,11 @@
         "ratings": 2,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_10.jpg"
+        "image": "./products_image/img_10.jpg",
+        "quantity": 0
     },
     {
-        "id": 11,
+        "id": "11",
         "title": "Sweet Potatoes (Pack of 5)",
         "privPrice": 7.99,
         "newPrice": 3.49,
@@ -151,10 +161,11 @@
         "ratings": 4,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_11.jpg"
+        "image": "./products_image/img_11.jpg",
+        "quantity": 0
     },
     {
-        "id": 12,
+        "id": "12",
         "title": "Red Onions (Pack of 6)",
         "privPrice": 7.99,
         "newPrice": 2.99,
@@ -165,10 +176,11 @@
         "ratings": 5,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_12.jpg"
+        "image": "./products_image/img_12.jpg",
+        "quantity": 0
     },
     {
-        "id": 13,
+        "id": "13",
         "title": "Fresh Asparagus",
         "privPrice": 7.99,
         "newPrice": 4.99,
@@ -179,10 +191,11 @@
         "ratings": 3,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_13.jpg"
+        "image": "./products_image/img_13.jpg",
+        "quantity": 0
     },
     {
-        "id": 14,
+        "id": "14",
         "title": "Green Beans (Pack of 8)",
         "privPrice": 7.99,
         "newPrice": 3.29,
@@ -193,10 +206,11 @@
         "ratings": 4,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_14.jpg"
+        "image": "./products_image/img_14.jpg",
+        "quantity": 0
     },
     {
-        "id": 15,
+        "id": "15",
         "title": "Fresh Avocado",
         "privPrice": 7.99,
         "newPrice": 1.79,
@@ -207,10 +221,11 @@
         "ratings": 5,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_15.jpg"
+        "image": "./products_image/img_15.jpg",
+        "quantity": 0
     },
     {
-        "id": 16,
+        "id": "16",
         "title": "Crisp Iceberg Lettuce",
         "privPrice": 7.99,
         "newPrice": 1.49,
@@ -221,10 +236,11 @@
         "ratings": 4,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_16.jpg"
+        "image": "./products_image/img_16.jpg",
+        "quantity": 0
     },
     {
-        "id": 17,
+        "id": "17",
         "title": "Fresh Cabbage",
         "privPrice": 7.99,
         "newPrice": 1.69,
@@ -235,10 +251,11 @@
         "ratings": 2,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_17.jpg"
+        "image": "./products_image/img_17.jpg",
+        "quantity": 0
     },
     {
-        "id": 18,
+        "id": "18",
         "title": "Artichoke Hearts (Pack of 6)",
         "privPrice": 7.99,
         "newPrice": 4.79,
@@ -249,10 +266,11 @@
         "ratings": 5,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_18.jpg"
+        "image": "./products_image/img_18.jpg",
+        "quantity": 0
     },
     {
-        "id": 19,
+        "id": "19",
         "title": "Fresh Beets",
         "privPrice": 7.99,
         "newPrice": 2.29,
@@ -263,10 +281,11 @@
         "ratings": 2,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_19.jpg"
+        "image": "./products_image/img_19.jpg",
+        "quantity": 0
     },
     {
-        "id": 20,
+        "id": "20",
         "title": "Crisp Celery Stalks (Pack of 8)",
         "privPrice": 7.99,
         "newPrice": 2.99,
@@ -277,10 +296,11 @@
         "ratings": 4,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_20.jpg"
+        "image": "./products_image/img_20.jpg",
+        "quantity": 0
     },
     {
-        "id": 21,
+        "id": "21",
         "title": "Fresh Radishes (Pack of 12)",
         "privPrice": 7.99,
         "newPrice": 1.79,
@@ -291,10 +311,11 @@
         "ratings": 5,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_21.jpg"
+        "image": "./products_image/img_21.jpg",
+        "quantity": 0
     },
     {
-        "id": 22,
+        "id": "22",
         "title": "Yellow Squash",
         "privPrice": 7.99,
         "newPrice": 2.49,
@@ -305,10 +326,11 @@
         "ratings": 3,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_22.jpg"
+        "image": "./products_image/img_22.jpg",
+        "quantity": 0
     },
     {
-        "id": 23,
+        "id": "23",
         "title": "Crisp Romaine Lettuce",
         "privPrice": 7.99,
         "newPrice": 1.69,
@@ -319,10 +341,11 @@
         "ratings": 2,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_23.jpg"
+        "image": "./products_image/img_23.jpg",
+        "quantity": 0
     },
     {
-        "id": 24,
+        "id": "24",
         "title": "Fresh Green Peas",
         "privPrice": 7.99,
         "newPrice": 2.99,
@@ -333,10 +356,11 @@
         "ratings": 5,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_24.jpg"
+        "image": "./products_image/img_24.jpg",
+        "quantity": 0
     },
     {
-        "id": 25,
+        "id": "25",
         "title": "Crisp Red Bell Peppers (Pack of 4)",
         "privPrice": 7.99,
         "newPrice": 3.49,
@@ -347,10 +371,11 @@
         "ratings": 3,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_25.jpg"
+        "image": "./products_image/img_25.jpg",
+        "quantity": 0
     },
     {
-        "id": 26,
+        "id": "26",
         "title": "Fresh Brussels Sprouts",
         "privPrice": 7.99,
         "newPrice": 3.99,
@@ -361,10 +386,11 @@
         "ratings": 4,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_26.jpg"
+        "image": "./products_image/img_26.jpg",
+        "quantity": 0
     },
     {
-        "id": 27,
+        "id": "27",
         "title": "Fresh Cilantro Bunch",
         "privPrice": 7.99,
         "newPrice": 1.99,
@@ -375,10 +401,11 @@
         "ratings": 3,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_27.jpg"
+        "image": "./products_image/img_27.jpg",
+        "quantity": 0
     },
     {
-        "id": 28,
+        "id": "28",
         "title": "Crisp Green Onions (Pack of 8)",
         "privPrice": 7.99,
         "newPrice": 2.29,
@@ -389,10 +416,11 @@
         "ratings": 3,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_28.jpg"
+        "image": "./products_image/img_28.jpg",
+        "quantity": 0
     },
     {
-        "id": 29,
+        "id": "29",
         "title": "Fresh Eggplants",
         "privPrice": 7.99,
         "newPrice": 2.49,
@@ -403,10 +431,11 @@
         "ratings": 5,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_29.jpg"
+        "image": "./products_image/img_29.jpg",
+        "quantity": 0
     },
     {
-        "id": 30,
+        "id": "30",
         "title": "Crisp Baby Carrots (Pack of 12)",
         "privPrice": 7.99,
         "newPrice": 2.79,
@@ -417,6 +446,7 @@
         "ratings": 4,
         "totalRatings": 207,
         "category": "VEGETABLES",
-        "image": "./products_image/img_30.jpg"
+        "image": "./products_image/img_30.jpg",
+        "quantity": 0
     }
 ]

@@ -7,11 +7,13 @@ import Main from "./components/Layout/Main";
 import Home from "./components/Home/Home";
 import Checkout from "./components/Checkout/Checkout";
 import ViewCart from "./components/ViewCart/ViewCart";
+import cartProductsLoader from "./loaders/cartProductsLoader.js";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Main></Main>,
+
         children: [
             {
                 path: "/",
