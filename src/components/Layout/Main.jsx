@@ -50,7 +50,7 @@ const Main = () => {
     const handleShow = () => setShow(true);
     return (
         <div>
-            <Header handleShow={handleShow}></Header>
+            <Header cart={cart} handleShow={handleShow}></Header>
             <Outlet context={([cart, setCart], handleAddToCart)}></Outlet>
             <Footer></Footer>
             <Cart show={show} cart={cart} handleClose={handleClose}></Cart>

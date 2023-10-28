@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./home.css";
 import object1 from "../../assets/object-2.png";
 import { HiOutlineCreditCard, HiOutlineCurrencyDollar, HiOutlineTruck } from "react-icons/hi2";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useOutletContext } from "react-router-dom";
 import Category from "../Category/Category";
 import image1 from "../../assets/category/category_img1.jpg";
 import image2 from "../../assets/category/category_img2.jpg";
@@ -13,9 +13,16 @@ import JustForYou from "../JustForYou/JustForYou";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { HiStar, HiOutlineStar, HiX, HiOutlineHeart } from "react-icons/hi";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaGooglePlusG } from "react-icons/fa6";
+import {
+    FaFacebookF,
+    FaTwitter,
+    FaLinkedinIn,
+    FaInstagram,
+    FaGooglePlusG,
+} from "react-icons/fa6";
 
 const Home = () => {
+    const handleAddToCart = useOutletContext();
     const categories = useLoaderData();
     const [products, setProducts] = useState([]);
     const [showAll, setShowAll] = useState(false);
@@ -232,7 +239,12 @@ const Home = () => {
                                             </div>
                                         </div>
                                         <div className="cart_wishlist d-flex align-items-center gap-2">
-                                            <button className="button1">
+                                            <button
+                                                onClick={() =>
+                                                    handleAddToCart(p)
+                                                }
+                                                className="button1"
+                                            >
                                                 Add to Cart
                                             </button>
                                             <a href="#">
