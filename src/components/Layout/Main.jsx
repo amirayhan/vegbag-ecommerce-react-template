@@ -15,19 +15,28 @@ const Main = () => {
             .then((data) => setProducts(data));
     }, []);
     useEffect(() => {
+        // const storedCart = getShoppingCart();
+        // console.log(storedCart);
+        // const savedCart = [];
+        // for (const id in storedCart) {
+        //     const addedProduct = products.find((product) => product.id === id);
+        //     console.log(addedProduct);
+        //     if (addedProduct) {
+        //         const quantity = storedCart[id];
+        //         addedProduct.quantity = quantity;
+        //         savedCart.push(addedProduct);
+        //     }
+        // }
         const storedCart = getShoppingCart();
-        console.log(storedCart);
         const savedCart = [];
         for (const id in storedCart) {
-            const addedProduct = products.find((product) => product.id === id);
-            console.log(addedProduct);
+            const addedProduct = products.find((pd) => pd.id === id);
             if (addedProduct) {
                 const quantity = storedCart[id];
                 addedProduct.quantity = quantity;
                 savedCart.push(addedProduct);
             }
         }
-        console.log(savedCart);
         setCart(savedCart);
     }, [products]);
     const handleAddToCart = (product) => {

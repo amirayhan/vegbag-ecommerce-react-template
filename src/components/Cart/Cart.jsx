@@ -1,24 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Cart.css";
 import { Modal, Offcanvas } from "react-bootstrap";
 import { HiX } from "react-icons/hi";
-import product_img from "../../../public/products_image/img_01.jpg";
 import { Link } from "react-router-dom";
 
-const Cart = ({ show, handleClose, cart }) => {
-    let quantity = 0;
-    let totalPrice = 0;
-    for (const product of cart) {
-        quantity = quantity + product.quantity;
-        totalPrice = totalPrice + product.newPrice * product.quantity;
-    }
+const Cart = ({ show, handleClose, cart, updateCart }) => {
+    const increaseQuantity = (productIndex) => {
+        const updatedCart = [...cart];
+        updatedCart[productIndex].quantity++;
+        updateCart(updatedCart);
+    };
+
     return (
-        <Offcanvas
-            show={show}
-            onHide={handleClose}
-            placement="end"
-            scroll="true"
-        >
+        <Offcanvas show={show} onHide={handleClose} placement="end" scroll={true}>
             <button className="close_btn" onClick={handleClose}>
                 <HiX />
             </button>
@@ -29,21 +23,22 @@ const Cart = ({ show, handleClose, cart }) => {
                     overflowY: "auto",
                 }}
             >
-                {cart.map((product) => (
+                {cart.map((product, index) => (
                     <div key={product.id} className="cart_item d-flex">
                         <div className="image">
                             <img src={product.image} alt={product.title} />
                         </div>
                         <div className="cart_text">
                             <h5>{product.title}</h5>
-                            <p className="price">${totalPrice}</p>
+                            <p className="price">${(product.newPrice * product.quantity).toFixed(2)}</p>
                             <div className="quantity">
-                                <button className="q_btn">-</button>
-                                <input
-                                    type="text"
-                                    defaultValue={product.quantity}
-                                />
-                                <button className="q_btn">+</button>
+                                <button className="q_btn" onClick={() => increaseQuantity(index)}>
+                                    -
+                                </button>
+                                <input type="number" value={product.quantity} />
+                                <button className="q_btn" onClick={() => increaseQuantity(index)}>
+                                    +
+                                </button>
                             </div>
                         </div>
                         <button className="remove_item">
