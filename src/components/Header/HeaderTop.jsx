@@ -1,5 +1,5 @@
 import React from "react";
-import "./header.css";
+import "./Header.css";
 import { HiPhone } from "react-icons/hi";
 
 const HeaderTop = () => {
@@ -27,12 +27,7 @@ const HeaderTop = () => {
                                     <label htmlFor="language" className="me-1">
                                         Language:
                                     </label>
-                                    <select
-                                        name="language"
-                                        id="language"
-                                        defaultValue="english"
-                                        className="me-5"
-                                    >
+                                    <select name="language" id="language" defaultValue="english" className="me-5">
                                         <option value="english">English</option>
                                         <option value="french">French</option>
                                         <option value="german">German</option>
@@ -41,11 +36,7 @@ const HeaderTop = () => {
                                     <label htmlFor="currency" className="me-1">
                                         Currency:
                                     </label>
-                                    <select
-                                        name="currency"
-                                        id="currency"
-                                        defaultValue="usd"
-                                    >
+                                    <select name="currency" id="currency" defaultValue="usd">
                                         <option value="usd">USD</option>
                                         <option value="gbp">GBP</option>
                                         <option value="eur">EUR</option>
