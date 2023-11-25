@@ -45,7 +45,7 @@ const Home = () => {
                         <img src={object1} className="image1" alt="img" />
                         <img src={object1} className="image2" alt="img" />
                         <h4>Fresh Vegetables</h4>
-                        <h1>200% Natural Organic</h1>
+                        <h1>100% Natural Organic</h1>
                         <p>Save up to 50% off on your firest order</p>
                         <button className="button1">Shop Collection</button>
                     </div>
