@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import "./header.css";
+import "./Header.css";
 import HeaderTop from "./HeaderTop";
 import { Link } from "react-router-dom";
 import { HiSearch, HiShoppingCart, HiUser, HiUserAdd } from "react-icons/hi";
@@ -21,10 +21,7 @@ const Header = ({ handleShow, cart }) => {
                         </div>
                         <div className="col-6 col-sm-6 col-md-5 col-lg-4">
                             <form className="search_box">
-                                <input
-                                    type="text"
-                                    placeholder="Search for products"
-                                />
+                                <input type="text" placeholder="Search for products" />
                                 <button type="submit">
                                     <HiSearch />
                                 </button>
@@ -37,9 +34,7 @@ const Header = ({ handleShow, cart }) => {
                                         <span className="icon pe-1">
                                             <HiUser></HiUser>
                                         </span>
-                                        <span className="d-none d-lg-inline-block">
-                                            Login
-                                        </span>
+                                        <span className="d-none d-lg-inline-block">Login</span>
                                     </Link>
                                 </li>
                                 <li>
@@ -47,25 +42,16 @@ const Header = ({ handleShow, cart }) => {
                                         <span className="icon pe-1">
                                             <HiUserAdd></HiUserAdd>
                                         </span>
-                                        <span className="d-none d-lg-inline-block">
-                                            Register
-                                        </span>
+                                        <span className="d-none d-lg-inline-block">Register</span>
                                     </Link>
                                 </li>
                                 <li>
-                                    <button
-                                        onClick={handleShow}
-                                        className="cart_btn"
-                                    >
+                                    <button onClick={handleShow} className="cart_btn">
                                         <span className="icon pe-1">
                                             <HiShoppingCart></HiShoppingCart>
                                         </span>
-                                        <span className="basket text-white d-none d-lg-inline-block">
-                                            Basket
-                                        </span>
-                                        <span className="quantity">
-                                            {cart.length}
-                                        </span>
+                                        <span className="basket text-white d-none d-lg-inline-block">Basket</span>
+                                        <span className="quantity">{cart.length}</span>
                                     </button>
                                 </li>
                             </ul>
